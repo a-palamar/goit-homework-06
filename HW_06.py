@@ -81,7 +81,7 @@ def rename_and_move_file(file: Path, category: str, dir: Path) -> None:
         new_path = target_dir / new_name
         counter += 1
     # Rename (or move) the file to the target directory
-    print(file.rename(new_path))
+    file.rename(new_path)
 
 
 def archive_unpack(file: Path, dir: Path):
